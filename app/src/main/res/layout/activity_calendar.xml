@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calendar"
+    android:orientation="vertical"
+    android:background="@drawable/calender2">
+
+<HorizontalScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First 10 days of Mercy"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="#FFD700"
+            android:onClick="First"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second 10 days of Forgiveness"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="#FFD700"
+            android:onClick="Second"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Third 10 days of seeking Refuge"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="#FFD700"
+            android:onClick="Third"/>
+
+    </LinearLayout>
+
+</HorizontalScrollView>
+    <FrameLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

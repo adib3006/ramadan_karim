@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ramadankareem">
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.ramadankareem.About"></activity>
+        <activity android:name="com.example.ramadankareem.Team" />
+        <activity android:name="com.example.ramadankareem.Home" />
+        <activity android:name="com.example.ramadankareem.ZakatCalculator" />
+        <activity android:name="com.example.ramadankareem.Alarm" />
+        <activity android:name="com.example.ramadankareem.Calendar" />
+        <activity android:name="com.example.ramadankareem.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

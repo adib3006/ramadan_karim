@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZakatCalculator"
+    android:orientation="vertical"
+    android:background="@drawable/zakat1">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Gold per Gram value:"
+        android:textSize="20dp"
+        android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/edtGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Gold Price"
+            android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Gold Belongings:"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/edtGold2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Gold Amount"
+            android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Silver per Gram value:"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/edtSilver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Silver Price"
+            android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Silver Belongings:"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/edtSilver2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Silver Amount"
+            android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Cash Belongings:"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/edtCash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Cash"
+            android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate"
+        android:onClick="Generate"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#FFD700"
+        android:textColor="#000000"/>
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:onClick="Reset"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="#FFD700"
+            android:textColor="#000000"
+            android:layout_marginLeft="30dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result:"
+            android:textSize="20dp"
+            android:textColor="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:id="@+id/edtResult"/>
+    </LinearLayout>
+
+
+</LinearLayout>
